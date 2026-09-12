@@ -83,7 +83,7 @@
                                 <span class="tag">RBAC</span>
                             </div>
                         </div>
-                        <a href="https://github.com/WijayaGanda/rentcamera.git" target="_blank" class="case-study-link">
+                        <a href="#" class="case-study-link" onclick="openModal('modal-sister'); return false;">
                             See the case study <span class="arrow">&rarr;</span>
                         </a>
                     </div>
@@ -101,7 +101,7 @@
                                 <span class="tag">PROTOTYPING</span>
                             </div>
                         </div>
-                        <a href="#" class="case-study-link">
+                        <a href="#" class="case-study-link" onclick="openModal('modal-esemka'); return false;">
                             See the case study <span class="arrow">&rarr;</span>
                         </a>
                     </div>
@@ -119,7 +119,7 @@
                                 <span class="tag">ENTREPRENEURSHIP</span>
                             </div>
                         </div>
-                        <a href="#" class="case-study-link">
+                        <a href="#" class="case-study-link" onclick="openModal('modal-scentStep'); return false;">
                             See the case study <span class="arrow">&rarr;</span>
                         </a>
                     </div>
@@ -138,7 +138,7 @@
                                 <span class="tag">PHOTOGRAPHY</span>
                             </div>
                         </div>
-                        <a href="#" class="case-study-link">
+                        <a href="#" class="case-study-link" onclick="openModal('modal-virto'); return false;">
                             See the case study <span class="arrow">&rarr;</span>
                         </a>
                     </div>
@@ -360,6 +360,653 @@
             </div>
         </div>
     </footer>
+
+    <!-- ============================================================ -->
+    <!-- CASE STUDY MODALS                                            -->
+    <!-- ============================================================ -->
+
+    <!-- Modal: SISTER Web App -->
+    <div class="cs-modal" id="modal-sister" role="dialog" aria-modal="true" aria-labelledby="cs-title-sister">
+        <div class="cs-modal-backdrop" onclick="closeModal('modal-sister')"></div>
+        <div class="cs-modal-panel">
+            <button class="cs-close-btn" onclick="closeModal('modal-sister')" aria-label="Close">&times;</button>
+
+            <div class="cs-hero">
+                <img src="sister.png" alt="SISTER Web App" class="cs-cover-img">
+                <div class="cs-hero-overlay">
+                    <span class="cs-badge">DEVELOPMENT &nbsp;·&nbsp; Laravel &nbsp;·&nbsp; RBAC</span>
+                    <h2 class="cs-title" id="cs-title-sister">SISTER Web App</h2>
+                    <p class="cs-subtitle">Sistem Telkomsel RoaMAX Kuota Haji - Point Of Sales Paket Roaming </p>
+                </div>
+            </div>
+
+            <div class="cs-body">
+                <!-- Problem -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">01</span>
+                        <h3>Masalah yang Diselesaikan</h3>
+                    </div>
+                    <p style="text-align: justify;">Penjualan paket RoaMAX Haji di Embarkasi Surabaya terhalang akses
+                        khusus tim internal yang
+                        mengharuskan input manual oleh staf booth. Dengan batas transit jemaah yang singkat (-+24 jam),
+                        alur
+                        manual ini memicu bottleneck, antrean panjang, dan risiko lost sales.
+                        SISTER Web App hadir
+                        memangkas alur kasir manual melalui transaksi mandiri jemaah (self-service QR/OTP), portal bulk
+                        order agen travel, serta otomatisasi verifikasi pembayaran.</p>
+                </div>
+
+                <!-- Role -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">02</span>
+                        <h3>Peran Saya</h3>
+                    </div>
+                    <div class="cs-role-cards">
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">⚙️</span>
+                            <strong>Full-Stack Developer</strong>
+                            <p>Membangun seluruh arsitektur backend dengan Laravel, termasuk sistem autentikasi dan
+                                otorisasi berbasis peran (RBAC).</p>
+                        </div>
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">🗄️</span>
+                            <strong>Database Architect</strong>
+                            <p>Merancang skema database MySQL dengan relasi tabel yang efisien untuk manajemen
+                                user dan histori transaksi.</p>
+                        </div>
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">🎨</span>
+                            <strong>UI Developer</strong>
+                            <p>Mengimplementasikan antarmuka seluruh sistem dengan Blade template dan CSS custom yang
+                                responsif.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Process -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">03</span>
+                        <h3>Proses Perancangan</h3>
+                    </div>
+                    <div class="cs-process-steps">
+                        <div class="cs-step">
+                            <div class="cs-step-num">1</div>
+                            <div>
+                                <strong>Requirements Gathering</strong>
+                                <p>Wawancara dengan stakeholder Telkomsel untuk memahami kebutuhan dan alur kerja yang
+                                    berjalan.</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">2</div>
+                            <div>
+                                <strong>Database Design &amp; ERD</strong>
+                                <p>Membuat Entity Relationship Diagram (ERD) untuk memetakan relasi antara entitas User,
+                                    Produk, dan Transaksi.</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">3</div>
+                            <div>
+                                <strong>Role-Based Access Control (RBAC)</strong>
+                                <p>Implementasi multi-role: Admin (kelola semua data), Sales (Create Transaksi, Update
+                                    Status), Travel Agent (Bulking Order) dan Pelanggan (Pemesanan Online).</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">4</div>
+                            <div>
+                                <strong>Development &amp; Testing</strong>
+                                <p>Development iteratif dengan Laravel 10, Eloquent ORM, dan Pengujian fitur menggunakan
+                                    Apache JMeter untuk load testing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cs-code-block">
+                        <div class="cs-code-header"><span>PHP &mdash; RBAC Middleware</span></div>
+                        <pre><code>// Middleware: CheckRole.php
+            public function handle(Request $request, Closure $next, ...$roles)
+            {
+                if (!Auth::check() || !in_array(Auth::user()-&gt;role, $roles)) {
+                    abort(403, 'Unauthorized action.');
+                }
+                return $next($request);
+            }</code></pre>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">05</span>
+                        <h3>Screenshot Aplikasi</h3>
+                    </div>
+                    <div class="cs-gallery">
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('sister/Login.png', 'Halaman Login — Autentikasi multi-role')">
+                            <img src="sister/Login.png" alt="Halaman Login SISTER" loading="lazy">
+                            <div class="cs-gallery-caption">Halaman Login</div>
+                        </div>
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('sister/Landing.png', 'Landing Page — Sistem Telkomsel RoaMAX Haji')">
+                            <img src="sister/Landing.png" alt="Landing Page SISTER" loading="lazy">
+                            <div class="cs-gallery-caption">Landing Page</div>
+                        </div>
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('sister/DashboardAdmin.png', 'Dashboard Admin — Overview Halaman Admin')">
+                            <img src="sister/DashboardAdmin.png" alt="DashboardAdmin" loading="lazy">
+                            <div class="cs-gallery-caption">Dashboard Admin</div>
+                        </div>
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('sister/DaftarTransaksiAdmin.png', 'Daftar Transaksi Halaman Admin')">
+                            <img src="sister/DaftarTransaksiAdmin.png" alt="DaftarTransaksi" loading="lazy">
+                            <div class="cs-gallery-caption">Daftar Transaksi Admin</div>
+                        </div>
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('sister/BerandaPelanggan.png', 'Beranda — Tampilan Beranda Pelanggan')">
+                            <img src="sister/BerandaPelanggan.png" alt="BerandaPelanggan" loading="lazy">
+                            <div class="cs-gallery-caption">Beranda</div>
+                        </div>
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('sister/DashboardSales.png', 'Dashboard Sales — Overview Halaman Sales')">
+                            <img src="sister/DashboardSales.png" alt="DashboardSales" loading="lazy">
+                            <div class="cs-gallery-caption">Dashboard Sales</div>
+                        </div>
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('sister/InputTransaksiOffline.png', 'Input Transaksi Offline — Halaman Pelayanan Sales')">
+                            <img src="sister/InputTransaksiOffline.png" alt="InputTransaksiOffline" loading="lazy">
+                            <div class="cs-gallery-caption">Input Transaksi Offline</div>
+                        </div>
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('sister/SnapMidtrans.png', 'Snap Midtrans — Tampilan Pembayaran')">
+                            <img src="sister/SnapMidtrans.png" alt="SnapMidtrans" loading="lazy">
+                            <div class="cs-gallery-caption">Snap Midtrans</div>
+                        </div>
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('sister/DashboardTravel.png', 'Dashboard Travel — Overview Travel')">
+                            <img src="sister/DashboardTravel.png" alt="DashboardTravel" loading="lazy">
+                            <div class="cs-gallery-caption">Dashboard Travel</div>
+                        </div>
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('sister/RiwayatPemesananTravel.jpeg', 'Riwayat Pemesanan Travel — History Pemesanan Paket')">
+                            <img src="sister/RiwayatPemesananTravel.jpeg" alt="RiwayatPemesananTravel" loading="lazy">
+                            <div class="cs-gallery-caption">Riwayat Pemesanan Travel</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">06</span>
+                        <h3>Dampak &amp; Hasil</h3>
+                    </div>
+                    <div class="cs-impact-grid">
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">100%</span>
+                            <p>Integrasi pembayaran digital Midtrans membantu efisiensi transaksi lebih cepat dan aman
+                            </p>
+                        </div>
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">4 Roles</span>
+                            <p>Sistem multi-role (Admin, Sales, Travel, Pelanggan) berhasil diimplementasikan dengan
+                                aman</p>
+                        </div>
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">~70%</span>
+                            <p>Pengurangan waktu proses pemesanan dibanding proses manual sebelumnya</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/ferdyvalentino123/telkomsel-haji.git" target="_blank"
+                        class="cs-github-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        Lihat Repository di GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Esemka Laundry -->
+    <div class="cs-modal" id="modal-esemka" role="dialog" aria-modal="true" aria-labelledby="cs-title-esemka">
+        <div class="cs-modal-backdrop" onclick="closeModal('modal-esemka')"></div>
+        <div class="cs-modal-panel">
+            <button class="cs-close-btn" onclick="closeModal('modal-esemka')" aria-label="Close">&times;</button>
+
+            <div class="cs-hero">
+                <img src="esemka.png" alt="Esemka Laundry" class="cs-cover-img">
+                <div class="cs-hero-overlay">
+                    <span class="cs-badge">UI/UX DESIGN &nbsp;·&nbsp; Figma &nbsp;·&nbsp; Prototyping</span>
+                    <h2 class="cs-title" id="cs-title-esemka">Esemka Laundry Project</h2>
+                    <p class="cs-subtitle">Web Design &amp; Prototyping Platform Laundry dengan Figma</p>
+                </div>
+            </div>
+
+            <div class="cs-body">
+                <!-- Problem -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">01</span>
+                        <h3>Urgensi</h3>
+                    </div>
+                    <p>Proyek Tugas Besar prototyping desain website lo-fi & hi-fi, kesulitan melacak status cucian mereka dan harus menelepon atau datang
+                        langsung ke toko hanya untuk mengetahui apakah pakaian mereka sudah selesai. Tidak ada sistem
+                        notifikasi, estimasi waktu, atau riwayat order. Pengalaman pelanggan sangat bergantung pada
+                        ingatan staf.</p>
+                </div>
+
+                <!-- Role -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">02</span>
+                        <h3>Peran Saya</h3>
+                    </div>
+                    <div class="cs-role-cards">
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">🔍</span>
+                            <strong>UX Researcher</strong>
+                            <p>Melakukan user interview dengan 5 pelanggan laundry untuk memahami kebutuhan dan frustasi
+                                mereka.</p>
+                        </div>
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">✏️</span>
+                            <strong>UI/UX Designer</strong>
+                            <p>Merancang wireframe, user flow, dan high-fidelity prototype menggunakan Figma dari nol.
+                            </p>
+                        </div>
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">🧪</span>
+                            <strong>Usability Tester</strong>
+                            <p>Melakukan sesi usability testing dengan prototype interaktif dan mengiterasi desain
+                                berdasarkan feedback.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Process -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">03</span>
+                        <h3>Proses Perancangan</h3>
+                    </div>
+                    <div class="cs-process-steps">
+                        <div class="cs-step">
+                            <div class="cs-step-num">1</div>
+                            <div>
+                                <strong>User Research &amp; Empathy Map</strong>
+                                <p>Membuat empathy map dari hasil wawancara untuk mengidentifikasi apa yang dirasakan,
+                                    dipikirkan, dan dibutuhkan pengguna.</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">2</div>
+                            <div>
+                                <strong>User Flow &amp; Information Architecture</strong>
+                                <p>Memetakan alur pengguna dari onboarding, pesan laundry, tracking status, hingga
+                                    riwayat transaksi.</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">3</div>
+                            <div>
+                                <strong>Wireframing (Lo-fi → Hi-fi)</strong>
+                                <p>Iterasi dari sketsa kertas ke wireframe digital, lalu ke desain hi-fi dengan sistem
+                                    warna biru segar yang mencerminkan kebersihan.</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">4</div>
+                            <div>
+                                <strong>Prototype &amp; Usability Testing</strong>
+                                <p>Prototype interaktif di Figma diuji dengan 3 pengguna; hasilnya digunakan untuk
+                                    revisi desain sebelum handoff.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cs-userflow">
+                        <div class="cs-flow-step">📱 Onboarding</div>
+                        <div class="cs-flow-arrow">→</div>
+                        <div class="cs-flow-step">🧺 Pesan Laundry</div>
+                        <div class="cs-flow-arrow">→</div>
+                        <div class="cs-flow-step">📍 Track Status</div>
+                        <div class="cs-flow-arrow">→</div>
+                        <div class="cs-flow-step">🔔 Notifikasi Selesai</div>
+                        <div class="cs-flow-arrow">→</div>
+                        <div class="cs-flow-step">⭐ Rating &amp; Review</div>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">04</span>
+                        <h3>Screenshot Aplikasi</h3>
+                    </div>
+                    <div class="cs-gallery">
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('esemka.png', 'Esemka Laundry Platform — Desain antarmuka')">
+                            <img src="esemka.png" alt="Esemka Laundry Platform" loading="lazy">
+                            <div class="cs-gallery-caption">Tampilan Antarmuka</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">05</span>
+                        <h3>Dampak &amp; Hasil</h3>
+                    </div>
+                    <div class="cs-impact-grid">
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">4.6/5</span>
+                            <p>Skor System Usability Scale (SUS) dari sesi usability testing dengan pengguna nyata</p>
+                        </div>
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">0 call</span>
+                            <p>Pengguna tidak perlu lagi menelepon toko — status tersedia langsung di aplikasi</p>
+                        </div>
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">3 iterasi</span>
+                            <p>Desain melalui 3 putaran iterasi berdasarkan feedback pengguna nyata</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: ScentStep Branding -->
+    <div class="cs-modal" id="modal-scentStep" role="dialog" aria-modal="true" aria-labelledby="cs-title-scentStep">
+        <div class="cs-modal-backdrop" onclick="closeModal('modal-scentStep')"></div>
+        <div class="cs-modal-panel">
+            <button class="cs-close-btn" onclick="closeModal('modal-scentStep')" aria-label="Close">&times;</button>
+
+            <div class="cs-hero">
+                <img src="esemka laundry.jpeg" alt="ScentStep Branding" class="cs-cover-img">
+                <div class="cs-hero-overlay">
+                    <span class="cs-badge">BRANDING &nbsp;·&nbsp; Graphic Design &nbsp;·&nbsp; Entrepreneurship</span>
+                    <h2 class="cs-title" id="cs-title-scentStep">ScentStep Branding &amp; Business</h2>
+                    <p class="cs-subtitle">Membangun identitas brand sepatu wangi dari nol — dari konsep ke produk nyata
+                    </p>
+                </div>
+            </div>
+
+            <div class="cs-body">
+                <!-- Problem -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">01</span>
+                        <h3>Masalah yang Diselesaikan</h3>
+                    </div>
+                    <p>Pasar sepatu lokal dipenuhi merek tanpa identitas yang kuat, membuat produk sulit diingat oleh
+                        konsumen. Tantangannya: bagaimana membangun brand sepatu dengan positioning unik — bau wangi —
+                        yang langsung terkomunikasikan lewat visual brand identity, tanpa anggaran marketing yang besar?
+                    </p>
+                </div>
+
+                <!-- Role -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">02</span>
+                        <h3>Peran Saya</h3>
+                    </div>
+                    <div class="cs-role-cards">
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">💡</span>
+                            <strong>Brand Strategist</strong>
+                            <p>Menentukan positioning, nilai brand, target pasar, dan unique selling proposition (USP)
+                                yang membedakan ScentStep dari kompetitor.</p>
+                        </div>
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">🎨</span>
+                            <strong>Visual Designer</strong>
+                            <p>Merancang logo, palet warna, tipografi, dan semua aset visual brand menggunakan Figma dan
+                                Canva.</p>
+                        </div>
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">📦</span>
+                            <strong>Business Owner</strong>
+                            <p>Mengeksekusi penjualan nyata, mengelola supply chain sederhana, dan belajar langsung dari
+                                pasar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Process -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">03</span>
+                        <h3>Proses Perancangan</h3>
+                    </div>
+                    <div class="cs-process-steps">
+                        <div class="cs-step">
+                            <div class="cs-step-num">1</div>
+                            <div>
+                                <strong>Market Research &amp; Competitor Analysis</strong>
+                                <p>Menganalisis 10+ brand sepatu lokal untuk menemukan celah positioning yang bisa
+                                    dimanfaatkan ScentStep.</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">2</div>
+                            <div>
+                                <strong>Brand Identity Design</strong>
+                                <p>Desain logo dengan motif jejak kaki yang terintegrasi dengan simbol aroma —
+                                    menyampaikan USP secara visual sekaligus.</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">3</div>
+                            <div>
+                                <strong>Brand Guideline &amp; Aset Visual</strong>
+                                <p>Membuat panduan brand lengkap: palet warna, tipografi, tone of voice, dan template
+                                    konten media sosial.</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">4</div>
+                            <div>
+                                <strong>Go-to-Market &amp; Penjualan Nyata</strong>
+                                <p>Meluncurkan produk melalui Instagram dan marketplace lokal, menggunakan konten
+                                    branded yang konsisten.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">04</span>
+                        <h3>Desain &amp; Branding</h3>
+                    </div>
+                    <div class="cs-gallery">
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('esemka laundry.jpeg', 'ScentStep Branding — Desain produk dan packaging')">
+                            <img src="esemka laundry.jpeg" alt="ScentStep Branding" loading="lazy">
+                            <div class="cs-gallery-caption">Aset Branding</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">05</span>
+                        <h3>Dampak &amp; Hasil</h3>
+                    </div>
+                    <div class="cs-impact-grid">
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">Real</span>
+                            <p>Produk nyata terjual ke pelanggan — bukan sekadar mockup atau konsep di atas kertas</p>
+                        </div>
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">Brand Kit</span>
+                            <p>Brand identity system lengkap siap pakai: logo, warna, tipografi, dan template konten</p>
+                        </div>
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">End-to-end</span>
+                            <p>Pengalaman nyata mengelola bisnis dari ideasi, desain, produksi, hingga penjualan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Graphic Design Virto Office -->
+    <div class="cs-modal" id="modal-virto" role="dialog" aria-modal="true" aria-labelledby="cs-title-virto">
+        <div class="cs-modal-backdrop" onclick="closeModal('modal-virto')"></div>
+        <div class="cs-modal-panel">
+            <button class="cs-close-btn" onclick="closeModal('modal-virto')" aria-label="Close">&times;</button>
+
+            <div class="cs-hero">
+                <img src="virtodesu.png" alt="Virto Office" class="cs-cover-img">
+                <div class="cs-hero-overlay">
+                    <span class="cs-badge">BRANDING &nbsp;·&nbsp; Graphic Design &nbsp;·&nbsp; Photography</span>
+                    <h2 class="cs-title" id="cs-title-virto">Graphic Design Virto Office</h2>
+                    <p class="cs-subtitle">Membangun ekosistem visual brand korporat — dari logo hingga konten media
+                        sosial</p>
+                </div>
+            </div>
+
+            <div class="cs-body">
+                <!-- Problem -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">01</span>
+                        <h3>Masalah yang Diselesaikan</h3>
+                    </div>
+                    <p>Virto Office, sebuah perusahaan penyedia jasa kantor, tidak memiliki identitas visual yang
+                        konsisten. Setiap materi promosi terlihat berbeda-beda, membuat brand sulit dikenali dan
+                        terkesan tidak profesional di mata calon klien korporat yang menjadi target utama mereka.</p>
+                </div>
+
+                <!-- Role -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">02</span>
+                        <h3>Peran Saya</h3>
+                    </div>
+                    <div class="cs-role-cards">
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">🖌️</span>
+                            <strong>Graphic Designer</strong>
+                            <p>Merancang seluruh aset visual brand termasuk logo revamp, template presentasi, dan materi
+                                promosi cetak &amp; digital.</p>
+                        </div>
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">📸</span>
+                            <strong>Photographer</strong>
+                            <p>Mengambil foto produk dan suasana kantor untuk digunakan sebagai konten media sosial dan
+                                brosur pemasaran.</p>
+                        </div>
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">📱</span>
+                            <strong>Social Media Designer</strong>
+                            <p>Membuat template konten Instagram dan LinkedIn yang konsisten sesuai panduan brand baru
+                                Virto Office.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Process -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">03</span>
+                        <h3>Proses Perancangan</h3>
+                    </div>
+                    <div class="cs-process-steps">
+                        <div class="cs-step">
+                            <div class="cs-step-num">1</div>
+                            <div>
+                                <strong>Brand Audit &amp; Discovery</strong>
+                                <p>Menganalisis materi lama Virto Office dan mengidentifikasi inkonsistensi visual untuk
+                                    dijadikan baseline perbaikan.</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">2</div>
+                            <div>
+                                <strong>Mood Board &amp; Konsep Visual</strong>
+                                <p>Mengumpulkan referensi visual brand korporat premium dan membangun mood board yang
+                                    selaras dengan nilai Virto: profesional, modern, terpercaya.</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">3</div>
+                            <div>
+                                <strong>Desain Aset &amp; Sistem Visual</strong>
+                                <p>Mengeksekusi desain di Figma dan Canva: logo, palet warna biru-emas, tipografi, dan
+                                    grid layout untuk konten digital.</p>
+                            </div>
+                        </div>
+                        <div class="cs-step">
+                            <div class="cs-step-num">4</div>
+                            <div>
+                                <strong>Photo Shoot &amp; Content Creation</strong>
+                                <p>Sesi foto di lokasi kantor menggunakan Lightroom untuk editing, menghasilkan konten
+                                    visual yang kohesif dan profesional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">04</span>
+                        <h3>Aset Visual</h3>
+                    </div>
+                    <div class="cs-gallery">
+                        <div class="cs-gallery-item"
+                            onclick="openLightbox('virtodesu.png', 'Graphic Design Virto Office — Berbagai aset visual perusahaan')">
+                            <img src="virtodesu.png" alt="Virto Office" loading="lazy">
+                            <div class="cs-gallery-caption">Materi Promosi &amp; Konten</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact -->
+                <div class="cs-section">
+                    <div class="cs-section-label">
+                        <span class="cs-label-icon">05</span>
+                        <h3>Dampak &amp; Hasil</h3>
+                    </div>
+                    <div class="cs-impact-grid">
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">Konsisten</span>
+                            <p>Seluruh touchpoint visual brand kini seragam — dari Instagram hingga materi cetak</p>
+                        </div>
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">+30%</span>
+                            <p>Peningkatan engagement media sosial setelah brand refresh dan konten foto profesional
+                                diterapkan</p>
+                        </div>
+                        <div class="cs-impact-card">
+                            <span class="cs-impact-num">Full Kit</span>
+                            <p>Deliverable lengkap: logo, brand guideline, 20+ template konten, dan foto produk siap
+                                pakai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="cs-lightbox" class="cs-lightbox" onclick="closeLightbox()">
+        <span class="cs-lightbox-close">&times;</span>
+        <img id="cs-lightbox-img" class="cs-lightbox-content" src="" alt="">
+        <div id="cs-lightbox-caption" class="cs-lightbox-caption"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
