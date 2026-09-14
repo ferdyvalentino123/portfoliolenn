@@ -979,28 +979,35 @@ a {
 .cs-userflow {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 4px;
     background: #0d0d0d;
     border: 1px solid #2a2a2a;
     border-radius: 12px;
-    padding: 20px 24px;
+    padding: 12px 16px;
     margin-top: 8px;
+    /* hide scrollbar for cleaner look if it overflows */
+    scrollbar-width: none;
+}
+
+.cs-userflow::-webkit-scrollbar {
+    display: none;
 }
 
 .cs-flow-step {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     color: #e0e0e0;
     background: #1e1e1e;
     border: 1px solid #333;
-    padding: 8px 14px;
+    padding: 6px 10px;
     border-radius: 8px;
     white-space: nowrap;
 }
 
 .cs-flow-arrow {
     color: #555;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 /* --- Impact Grid --- */
