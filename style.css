@@ -1245,6 +1245,10 @@ a {
     transform: scale(1.05);
 }
 
+.cs-masonry-item:hover .cs-gallery-caption {
+    opacity: 1;
+}
+
 @media (max-width: 900px) {
     .cs-masonry-gallery {
         column-count: 2;
