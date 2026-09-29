@@ -96,7 +96,7 @@
                         <div class="project-meta">
                             <h3 class="project-title">IoT Dashboard Monitoring Fullobster Farm</h3>
                             <div class="project-tags">
-                                <!-- <span class="tag"></span> -->
+                                <span class="tag">IoT</span>
                                 <span class="tag">Real-Time Dashboard</span>
                                 <span class="tag">Classification</span>
                             </div>
@@ -123,6 +123,24 @@
                             See the case study <span class="arrow">&rarr;</span>
                         </a>
                     </div>
+
+                    <!-- Project 2b -->
+                    <!-- <div class="project-card reveal">
+                        <div class="project-image-wrapper">
+                            <img src="esemka.png" alt="Esemka Laundry" class="project-img">
+                        </div>
+                        <div class="project-meta">
+                            <h3 class="project-title">UI/UX Design Mobile Apps</h3>
+                            <div class="project-tags">
+                                <span class="tag">UI/UX DESIGN</span>
+                                <span class="tag">FIGMA</span>
+                                <span class="tag">PROTOTYPING</span>
+                            </div>
+                        </div>
+                        <a href="#" class="case-study-link" onclick="openModal('modal-esemka'); return false;">
+                            See the case study <span class="arrow">&rarr;</span>
+                        </a>
+                    </div> -->
 
                     <!-- Project 3 -->
                     <div class="project-card reveal">
@@ -1642,7 +1660,7 @@
         </div>
     </div>
 
-    <!-- Modal: PKKMB -->
+    <!-- Modal: fullobster -->
     <div class="cs-modal" id="modal-lobs" role="dialog" aria-modal="true" aria-labelledby="cs-title-scentStep">
         <div class="cs-modal-backdrop" onclick="closeModal('modal-lobs')"></div>
         <div class="cs-modal-panel">
@@ -1651,10 +1669,10 @@
             <div class="cs-hero">
                 <img src="lobster/full.png" alt="pkkmb" class="cs-cover-img">
                 <div class="cs-hero-overlay">
-                    <span class="cs-badge">·&nbsp; IoT &nbsp;·</span>
-                    <h2 class="cs-title" id="cs-title-scentStep">IoT Dashboard Monitoring Lobster Air Tawar</h2>
-                    <p class="cs-subtitle">Managing visual identity, live documentation, and digital publications for
-                        the Telkom University Surabaya orientation program.
+                    <span class="cs-badge">·&nbsp; Internet of Things &nbsp;·</span>
+                    <h2 class="cs-title" id="cs-title-scentStep">IoT Dashboard for Freshwater Lobster Monitoring</h2>
+                    <p class="cs-subtitle">Developing a real-time IoT monitoring dashboard and AI classification system
+                        for freshwater lobster aquaculture.
                     </p>
                 </div>
             </div>
@@ -1666,11 +1684,11 @@
                         <span class="cs-label-icon">01</span>
                         <h3>Urgency</h3>
                     </div>
-                    <p>Executing a large-scale university orientation requires consistent visual communication across
-                        multiple media touchpoints, from physical stage decorations to daily social media publications.
-                        The main challenge was maintaining brand consistency, ensuring real-time documentation delivery,
-                        and creating engaging promotional assets under tight event schedules to keep thousands of new
-                        students informed and excited.
+                    <p>Optimal water quality (pH, TDS, Temperature, and Dissolved Oxygen) is critical for freshwater
+                        lobster survival and growth. Manual testing is often slow, inaccurate, and lacks continuous
+                        monitoring, leading to high mortality rates. The main challenge was to integrate real-time
+                        sensor streams from edge devices (Raspberry Pi/NodeMCU) into a responsive web dashboard,
+                        alongside machine learning classification models to give farmers immediate actionable insights.
                     </p>
                 </div>
 
@@ -1682,22 +1700,22 @@
                     </div>
                     <div class="cs-role-cards">
                         <div class="cs-role-card">
-                            <span class="cs-role-icon">📸</span>
-                            <strong>Media & Documentation Staff (PDD)</strong>
-                            <p>Responsible for capturing key event moments, managing official event photography, and
-                                organizing digital media assets for real-time publication.</p>
-                        </div>
-                        <div class="cs-role-card">
-                            <span class="cs-role-icon">📂</span>
-                            <strong>Asset Management & Distribution</strong>
-                            <p>Editing, sorting, and delivering high-quality documentation photos under strict deadlines
-                                for immediate distribution to public relations and marketing teams.</p>
+                            <span class="cs-role-icon">💻</span>
+                            <strong>Web Developer</strong>
+                            <p>Building the core dashboard using Laravel, constructing RESTful APIs for sensor data
+                                telemetry, and implementing JavaScript AJAX polling for zero-refresh chart updates.</p>
                         </div>
                         <div class="cs-role-card">
                             <span class="cs-role-icon">🎨</span>
-                            <strong>Visual Asset Creator</strong>
-                            <p>Designing social media publication feeds, promotional posters, and visual overlays to
-                                maintain a cohesive event identity across digital channels.</p>
+                            <strong>UI/UX Designer</strong>
+                            <p>Designing intuitive data visualization cards, responsive layouts, and status indicator
+                                components in Figma to ensure complex telemetry data is easy to read.</p>
+                        </div>
+                        <div class="cs-role-card">
+                            <span class="cs-role-icon">🤖</span>
+                            <strong>AI Model & Data Integration</strong>
+                            <p>Integrating Machine Learning classification output (Decision Tree) into the web interface
+                                to automatically display water condition safety levels.</p>
                         </div>
                     </div>
                 </div>
@@ -1705,6 +1723,22 @@
                 <div class="cs-section-label">
                     <span class="cs-label-icon">Tools</span>
                     <div class="bento-grid reveal">
+                        <!-- PHP -->
+                        <div class="bento-box">
+                            <svg class="tool-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z" />
+                            </svg>
+                            <p class="tool-name">PHP</p>
+                        </div>
+                        <!-- MySQL -->
+                        <div class="bento-box">
+                            <svg class="tool-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.877.615 1.583.615.264 0 .506-.033.725-.098l1.325.772.36-.622zM15.5 17.588c-.225-.36-.337-.94-.337-1.736 0-1.393.424-2.09 1.27-2.09.443 0 .77.167.977.5.224.362.336.936.336 1.723 0 1.404-.424 2.108-1.27 2.108-.445 0-.77-.167-.978-.5zm-1.658-.425c0 .47-.172.856-.516 1.156-.344.3-.803.45-1.384.45-.543 0-1.064-.172-1.573-.515l.237-.476c.438.22.833.328 1.19.328.332 0 .593-.073.783-.22a.754.754 0 00.3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177 0-.45.157-.81.47-1.085.315-.278.72-.415 1.22-.415.512 0 .98.136 1.4.41l-.213.476a2.726 2.726 0 00-1.064-.23c-.283 0-.502.068-.654.206a.685.685 0 00-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407.14.11.28.216.427.31.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.223 3.223 0 00-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106.106-.027.213-.06.32-.094v-.06c-.12-.12-.21-.283-.334-.395a8.867 8.867 0 00-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a17.69 17.69 0 01-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.445 3.445 0 01-.35-.4 8.76 8.76 0 01-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.478 2.478 0 01-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.953 5.953 0 012.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378z" />
+                            </svg>
+                            <p class="tool-name">MySQL</p>
+                        </div>
                         <div class="bento-box">
                             <svg class="tool-icon" viewBox="0 0 24 24" width="24" height="24">
                                 <!-- Lingkaran Kiri Atas (Oranye/Merah) -->
@@ -1721,29 +1755,22 @@
                             <p class="tool-name">Figma</p>
                         </div>
                         <div class="bento-box">
-                            <svg class="tool-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.848 18.232H7.21V6.155h4.152c1.782 0 3.125.402 4.029 1.206.904.805 1.356 1.968 1.356 3.488 0 1.508-.445 2.656-1.336 3.444-.89.789-2.215 1.183-3.974 1.183h-1.284v2.756zm5.111-7.391c0-1.821-1.074-2.733-3.223-2.733H9.412v5.405h2.585c2.183 0 3.275-.89 3.275-2.672z" />
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <!-- Kubus Utama (L Kiri) -->
+                                <path d="M3 8.5L8.5 5.5L14 8.5V14.5L8.5 17.5L3 14.5V8.5Z" />
+                                <path d="M8.5 5.5V17.5" />
+                                <path d="M3 8.5L8.5 11.5L14 8.5" />
+                                <!-- Perpanjangan Alas L -->
+                                <path d="M8.5 17.5L14 20.5L19.5 17.5V11.5" />
+                                <path d="M14 14.5L19.5 11.5" />
+                                <path d="M14 14.5V20.5" />
+                                <!-- Kubus Kecil Kanan Atas -->
+                                <path d="M14 8.5L16.75 7L19.5 8.5V11.5L16.75 13L14 11.5V8.5Z" />
+                                <path d="M16.75 7V13" />
+                                <path d="M14 8.5L16.75 10L19.5 8.5" />
                             </svg>
-                            <p class="tool-name">Photoshop</p>
-                        </div>
-                        <!-- Lightroom -->
-                        <div class="bento-box">
-                            <svg class="tool-icon" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="4" fill="none" />
-                                <text x="50%" y="55%" text-anchor="middle" font-size="12" font-weight="bold"
-                                    stroke="none">Lr</text>
-                            </svg>
-                            <p class="tool-name">Lightroom</p>
-                        </div>
-                        <!-- Canva -->
-                        <div class="bento-box">
-                            <svg class="tool-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M20.24 9.172a6.386 6.386 0 0 0-2.455-1.28l.092.747a1.082 1.082 0 0 1-1.013 1.206h-.14a3.52 3.52 0 0 1-1.637-.66l-.16-.123a3.565 3.565 0 0 0-2.28-.826c-2.003 0-3.328 1.442-3.328 3.524 0 2.148 1.417 3.564 3.488 3.564 1.018 0 1.884-.503 2.443-1.35l.939.608c-.777 1.18-2.025 1.91-3.642 1.91-3.238 0-5.617-2.193-5.617-5.882 0-3.593 2.455-5.84 5.717-5.84 1.624 0 3.01.764 3.826 2.016 0 0 .59-.838 1.163-.838 1.205 0 1.96.88 1.96 2.217 0 1.393-.8 2.26-1.996 2.26-.612 0-1.125-.295-1.455-.78l-.94.6c.553.818 1.457 1.34 2.505 1.34 2.073 0 3.538-1.467 3.538-3.523 0-.677-.174-1.312-.485-1.831z" />
-                            </svg>
-                            <p class="tool-name">Canva</p>
+                            <p class="tool-name">Laravel</p>
                         </div>
                     </div>
                 </div>
@@ -1758,34 +1785,37 @@
                         <div class="cs-step">
                             <div class="cs-step-num">1</div>
                             <div>
-                                <strong>Pre-Event Branding &amp; Planning</strong>
-                                <p>Collaborating with the core committee to establish visual guidelines, design
-                                    templates, and a publication schedule for the entire orientation timeline.</p>
+                                <strong>System Architecture &amp; API Design</strong>
+                                <p>Designing RESTful API endpoints in Laravel to receive JSON data packets pushed from
+                                    the Python script running on the Raspberry Pi.</p>
                             </div>
                         </div>
                         <div class="cs-step">
                             <div class="cs-step-num">2</div>
                             <div>
-                                <strong>Live Event Coverage</strong>
-                                <p>Conducting live photo and video documentation across multiple venues during opening
-                                    ceremonies, talk shows, and student activity showcases.</p>
+                                <strong>Dashboard Wireframing & UI Design</strong>
+                                <p>Structuring layout components in Figma, prioritizing key metrics (pH, TDS, Temp, DO)
+                                    with distinct
+                                    visual threshold badges for instant readability.</p>
                             </div>
                         </div>
                         <div class="cs-step">
                             <div class="cs-step-num">3</div>
                             <div>
-                                <strong>Post-Processing &amp; Rapid Editing</strong>
-                                <p>Filtering and color-grading hundreds of raw photos daily using Adobe Lightroom to
-                                    ensure rapid handoff for social media updates.
+                                <strong>Real-Time Chart Implementation</strong>
+                                <p>Developing interactive line charts using Chart.js, configured with asynchronous
+                                    JavaScript polling
+                                    to continuously fetch new data points without page reloads.
                                 </p>
                             </div>
                         </div>
                         <div class="cs-step">
                             <div class="cs-step-num">4</div>
                             <div>
-                                <strong>Publication &amp; Archiving</strong>
-                                <p>Distributing finalized visual assets for Instagram posts, recap reels, and official
-                                    campus archiving.</p>
+                                <strong>AI Status Integration &amp; Testing</strong>
+                                <p>Connecting the Machine Learning classification pipeline to dynamically update status
+                                    banners (e.g.,
+                                    Optimal / Warning / Action Required)</p>
                             </div>
                         </div>
                     </div>
@@ -1795,67 +1825,66 @@
                 <div class="cs-section">
                     <div class="cs-section-label">
                         <span class="cs-label-icon">04</span>
-                        <h3>Design &amp; Branding</h3>
+                        <h3>Project &amp; Results</h3>
                     </div>
                     <div class="cs-masonry-gallery">
                         <div class="cs-masonry-item"
-                            onclick="openLightbox('pkkmb/1.png', 'All Crew of PKKMB Dewangkara Maetala 2024')">
-                            <img src="pkkmb/1.png" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">All Crew of PKKMB Dewangkara Maetala 2024</div>
-                        </div>
-                        <div class="cs-masonry-item" onclick="openLightbox('pkkmb/gg.JPG', 'Papermob Show')">
-                            <img src="pkkmb/gg.JPG" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">Papermob Show</div>
+                            onclick="openLightbox('lobster/1.jpeg', 'Dashboard Monitoring Freshwater Lobster')">
+                            <img src="lobster/1.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">Dashboard Monitoring Freshwater Lobster</div>
                         </div>
                         <div class="cs-masonry-item"
-                            onclick="openLightbox('pkkmb/6.JPG', 'PKKMB - Orientation University Students')">
-                            <img src="pkkmb/6.JPG" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">PKKMB - Orientation University Students</div>
+                            onclick="openLightbox('lobster/2.jpeg', 'Dashboard Monitoring Freshwater Lobster')">
+                            <img src="lobster/2.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">Dashboard Monitoring Freshwater Lobster</div>
                         </div>
                         <div class="cs-masonry-item"
-                            onclick="openLightbox('pkkmb/3.JPG', 'PKKMB - Orientation University Students')">
-                            <img src="pkkmb/3.JPG" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">PKKMB - Orientation University Students</div>
+                            onclick="openLightbox('lobster/3.jpeg', 'Dashboard Monitoring Freshwater Lobster')">
+                            <img src="lobster/3.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">Dashboard Monitoring Freshwater Lobster</div>
                         </div>
                         <div class="cs-masonry-item"
-                            onclick="openLightbox('pkkmb/sp.JPG', 'PKKMB - Orientation University Students')">
-                            <img src="pkkmb/sp.JPG" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">PKKMB - Orientation University Students</div>
+                            onclick="openLightbox('lobster/4.jpeg', 'Dashboard Monitoring Freshwater Lobster')">
+                            <img src="lobster/4.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">Dashboard Monitoring Freshwater Lobster</div>
                         </div>
                         <div class="cs-masonry-item"
-                            onclick="openLightbox('pkkmb/4.JPG', 'PKKMB - Orientation University Students')">
-                            <img src="pkkmb/4.JPG" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">PKKMB - Orientation University Students</div>
-                        </div>
-                        <div class="cs-masonry-item" onclick="openLightbox('pkkmb/2.jpg', 'Twibbon Design Template')">
-                            <img src="pkkmb/2.jpg" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">Twibbon Design Template</div>
-                        </div>
-                        <div class="cs-masonry-item" onclick="openLightbox('pkkmb/11.png', 'Lanyard Mockups Design')">
-                            <img src="pkkmb/11.png" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">Lanyard Mockups Design</div>
-                        </div>
-                        <div class="cs-masonry-item" onclick="openLightbox('pkkmb/5.png', 'Commitees ID Card Design')">
-                            <img src="pkkmb/5.png" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">Commitees ID Card Design</div>
-                        </div>
-                        <div class="cs-masonry-item" onclick="openLightbox('pkkmb/12.JPG', 'BTS Short Movie')">
-                            <img src="pkkmb/12.JPG" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">BTS Short Movie</div>
+                            onclick="openLightbox('lobster/5.jpeg', 'Dashboard Monitoring Freshwater Lobster')">
+                            <img src="lobster/5.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">Dashboard Monitoring Freshwater Lobster</div>
                         </div>
                         <div class="cs-masonry-item"
-                            onclick="openLightbox('pkkmb/13.JPG', 'PKKMB - Orientation University Students')">
-                            <img src="pkkmb/13.JPG" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">PKKMB - Orientation University Students</div>
+                            onclick="openLightbox('lobster/6.jpeg', 'Dashboard Monitoring Freshwater Lobster')">
+                            <img src="lobster/6.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">Dashboard Monitoring Freshwater Lobster</div>
                         </div>
                         <div class="cs-masonry-item"
-                            onclick="openLightbox('pkkmb/7.png', 'PKKMB - Orientation University Students')">
-                            <img src="pkkmb/7.png" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">PKKMB - Orientation University Students</div>
+                            onclick="openLightbox('lobster/7.jpeg', 'Dashboard Monitoring Freshwater Lobster')">
+                            <img src="lobster/7.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">Dashboard Monitoring Freshwater Lobster</div>
                         </div>
-                        <div class="cs-masonry-item" onclick="openLightbox('pkkmb/sb.jpg', 'Story Board Short Movie')">
-                            <img src="pkkmb/sb.jpg" alt="pkkmb" loading="lazy">
-                            <div class="cs-gallery-caption">Story Board Short Movie</div>
+                        <div class="cs-masonry-item"
+                            onclick="openLightbox('lobster/pameran.jpeg', 'Final Project Exhibition - Telkom University')">
+                            <img src="lobster/pameran.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">Final Project Exhibition - Telkom University</div>
+                        </div>
+                        <div class="cs-masonry-item"
+                            onclick="openLightbox('lobster/8.jpeg', 'Monitoring Test at Fullobster Farm')">
+                            <img src="lobster/8.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">Monitoring Test at Fullobster Farm</div>
+                        </div>
+                        <div class="cs-masonry-item"
+                            onclick="openLightbox('lobster/9.jpeg', 'Raspberry Pi & Sensor Node Setup')">
+                            <img src="lobster/9.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">Raspberry Pi &amp; Sensor Node Setup</div>
+                        </div>
+                        <div class="cs-masonry-item" onclick="openLightbox('lobster/10.jpeg', 'All Sensor & Hardware')">
+                            <img src="lobster/10.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">All Sensor &amp; Hardware</div>
+                        </div>
+                        <div class="cs-masonry-item" onclick="openLightbox('lobster/11.jpeg', 'Team Developer')">
+                            <img src="lobster/11.jpeg" alt="lobs" loading="lazy">
+                            <div class="cs-gallery-caption">Team Developer</div>
                         </div>
                     </div>
                 </div>
@@ -1868,19 +1897,19 @@
                     </div>
                     <div class="cs-impact-grid">
                         <div class="cs-impact-card">
-                            <span class="cs-impact-num">Real-Time Media Delivery</span>
-                            <p>Successfully delivered daily photo recaps and publication feeds on time throughout the
-                                entire PKKMB event series.</p>
+                            <span class="cs-impact-num">Zero-Refresh Data Monitoring</span>
+                            <p>Successfully engineered an asynchronous data pipeline fetching telemetries seamlessly
+                                without degrading dashboard performance or page reloads.</p>
                         </div>
                         <div class="cs-impact-card">
-                            <span class="cs-impact-num">Consistency</span>
-                            <p>Maintained unified visual aesthetics across all physical banners, digital feeds, and
-                                documentation outputs.</p>
+                            <span class="cs-impact-num">Automated Decision Support</span>
+                            <p>Provided lobster farmers with instant water quality classifications, significantly
+                                reducing response time to dangerous water parameter drops.</p>
                         </div>
                         <div class="cs-impact-card">
-                            <span class="cs-impact-num">High Engagement Output</span>
-                            <p>Produced engaging visual assets that significantly increased social media interactions
-                                and student reach during the orientation period</p>
+                            <span class="cs-impact-num">End-to-End IoT Integration</span>
+                            <p>Bridged the gap between hardware edge devices (Python on Raspberry Pi) and a modern
+                                Laravel web application.</p>
                         </div>
                     </div>
                 </div>
